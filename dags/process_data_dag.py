@@ -14,7 +14,7 @@ from helpers import SqlQueries
 # - Do not email on retry
 
 default_args = {
-    'owner': 'udacity',
+    'owner': 'sparkify',
     'start_date': datetime(2018, 11, 12),
     'depends_on_past': False,
     'retries': 3,

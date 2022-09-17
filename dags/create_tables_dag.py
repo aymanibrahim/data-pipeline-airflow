@@ -4,7 +4,8 @@ from airflow.operators import CreateTableOperator
 
 
 dag = DAG('create_tables_dag',
-          description='Create tables in Redshift',         
+          description='Create tables in Redshift',
+          owner='sparkify',
           start_date=datetime.now(),
           schedule_interval='@once',
           max_active_runs=1
